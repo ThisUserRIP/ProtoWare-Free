@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{cc528159-ea80-4497-ae65-486b76c49aa0}</ProjectGuid>
+    <RootNamespace>ProtoWare</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)\bin</OutDir>
+    <IntDir>$(SolutionDir)\buildstuff\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)\bin</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;PROTOWARE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;PROTOWARE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;PROTOWARE_EXPORTS;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>system;system\pch;system\alghoritms;system\manipulators;libs;libs\imgui;libs\minhook;libs\minhook\include;ui;game\structs;game\methods;game\other;game\internal;game;cheat;cheat\advantage;cheat\combat;cheat\visuals;cheat\visuals\killfeed;config</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>PROTOWARE_EXPORTS;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>system;system\pch;system\alghoritms;system\manipulators;libs;libs\imgui;libs\minhook;libs\minhook\include;ui;game\structs;game\methods;game\other;game\internal;game;cheat;cheat\advantage;cheat\combat;cheat\visuals;cheat\visuals\killfeed;config</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="cheat\combat\aim.h" />
+    <ClInclude Include="cheat\visuals\killfeed\hitnotify.h" />
+    <ClInclude Include="cheat\visuals\targethud.h" />
+    <ClInclude Include="config\config.h" />
+    <ClInclude Include="cheat\combat\fast_raycast.h" />
+    <ClInclude Include="cheat\combat\direct_melee.h" />
+    <ClInclude Include="cheat\combat\custom_attack.h" />
+    <ClInclude Include="cheat\combat\attack_util.h" />
+    <ClInclude Include="game\game.h" />
+    <ClInclude Include="game\gameoffsets.h" />
+    <ClInclude Include="game\internal\internal_camera.h" />
+    <ClInclude Include="game\internal\internal_component.h" />
+    <ClInclude Include="game\internal\internal_gameobject.h" />
+    <ClInclude Include="game\internal\internal_transform.h" />
+    <ClInclude Include="game\other\il2cpp.h" />
+    <ClInclude Include="game\structs\stVP_FPCamera.hpp" />
+    <ClInclude Include="game\structs\stVP_FPController.hpp" />
+    <ClInclude Include="game\other\component.h" />
+    <ClInclude Include="game\methods\mdScreen.hpp" />
+    <ClInclude Include="game\structs\stWeaponSystem.hpp" />
+    <ClInclude Include="game\methods\mdCamera.hpp" />
+    <ClInclude Include="game\methods\mdClient.hpp" />
+    <ClInclude Include="game\methods\mdParticleManager.hpp" />
+    <ClInclude Include="game\methods\mdPhysics.hpp" />
+    <ClInclude Include="game\methods\mdWeaponSystem.hpp" />
+    <ClInclude Include="game\methods\mdItemsDB.hpp" />
+    <ClInclude Include="game\methods\mdRandom.hpp" />
+    <ClInclude Include="game\methods\mdRaycastHit.hpp" />
+    <ClInclude Include="game\structs\stPlayerHitboxData.hpp" />
+    <ClInclude Include="game\methods\mdObscuredInt.hpp" />
+    <ClInclude Include="game\structs\stBotPoseController.hpp" />
+    <ClInclude Include="cheat\advantage\movement.h" />
+    <ClInclude Include="game\structs\stVP_FPWeaponReloader.hpp" />
+    <ClInclude Include="game\methods\mdTime.hpp" />
+    <ClInclude Include="game\structs\stAmmo.hpp" />
+    <ClInclude Include="game\other\keycode.h" />
+    <ClInclude Include="game\methods\mdInput.hpp" />
+    <ClInclude Include="game\methods\mdRenderSettings.hpp" />
+    <ClInclude Include="game\structs\stVP_FPWeaponHandler.hpp" />
+    <ClInclude Include="game\structs\stVP_Shooter.hpp" />
+    <ClInclude Include="cheat\visuals\killfeed\killfeed.h" />
+    <ClInclude Include="cheat\advantage\playerhealth.h" />
+    <ClInclude Include="game\structs\stPlayerControl.hpp" />
+    <ClInclude Include="game\structs\stPlayerProfile.hpp" />
+    <ClInclude Include="system\il2cpp_structs.h" />
+    <ClInclude Include="libs\imgui\imconfig.h" />
+    <ClInclude Include="libs\imgui\imgui.h" />
+    <ClInclude Include="libs\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="libs\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="libs\imgui\imgui_internal.h" />
+    <ClInclude Include="libs\imgui\imstb_rectpack.h" />
+    <ClInclude Include="libs\imgui\imstb_textedit.h" />
+    <ClInclude Include="libs\imgui\imstb_truetype.h" />
+    <ClInclude Include="libs\imgui\stb_image.h" />
+    <ClInclude Include="libs\minhook\include\MinHook.h" />
+    <ClInclude Include="libs\minhook\src\buffer.h" />
+    <ClInclude Include="libs\minhook\src\hde\hde32.h" />
+    <ClInclude Include="libs\minhook\src\hde\hde64.h" />
+    <ClInclude Include="libs\minhook\src\hde\pstdint.h" />
+    <ClInclude Include="libs\minhook\src\hde\table32.h" />
+    <ClInclude Include="libs\minhook\src\hde\table64.h" />
+    <ClInclude Include="libs\minhook\src\trampoline.h" />
+    <ClInclude Include="game\structs\stClient.hpp" />
+    <ClInclude Include="game\structs\stServerBotData.hpp" />
+    <ClInclude Include="game\structs\stServerPlayersController.hpp" />
+    <ClInclude Include="cheat\visuals\playeresp.h" />
+    <ClInclude Include="system\alghoritms\math3d.h" />
+    <ClInclude Include="system\alghoritms\unmanaged_list.hpp" />
+    <ClInclude Include="system\filesystem.h" />
+    <ClInclude Include="system\globals.h" />
+    <ClInclude Include="system\manipulators\byte_reader.h" />
+    <ClInclude Include="system\manipulators\byte_writer.h" />
+    <ClInclude Include="system\monostring.h" />
+    <ClInclude Include="system\pch\pch.h" />
+    <ClInclude Include="system\tarray.h" />
+    <ClInclude Include="system\textfmt.h" />
+    <ClInclude Include="cheat\combat\target_system.h" />
+    <ClInclude Include="system\tlist.h" />
+    <ClInclude Include="cheat\visuals\tracers.h" />
+    <ClInclude Include="ui\uimainfont.h" />
+    <ClInclude Include="ui\uimenu.h" />
+    <ClInclude Include="ui\uirender.h" />
+    <ClInclude Include="ui\uiprocessor.h" />
+    <ClInclude Include="ui\kiero\kiero.h" />
+    <ClInclude Include="cheat\visuals\visuals.h" />
+    <ClInclude Include="cheat\updatecycle.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cheat\combat\aim.cpp" />
+    <ClCompile Include="cheat\combat\direct_melee.cpp" />
+    <ClCompile Include="cheat\visuals\killfeed\hitnotify.cpp" />
+    <ClCompile Include="cheat\visuals\targethud.cpp" />
+    <ClCompile Include="cheat\combat\custom_attack.cpp" />
+    <ClCompile Include="cheat\combat\attack_util.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="cheat\combat\fast_raycast.cpp" />
+    <ClCompile Include="game\game.cpp" />
+    <ClCompile Include="game\internal\internal_component.cpp" />
+    <ClCompile Include="game\internal\internal_gameobject.cpp" />
+    <ClCompile Include="game\internal\internal_transform.cpp" />
+    <ClCompile Include="game\other\il2cpp.cpp" />
+    <ClCompile Include="cheat\visuals\killfeed\killfeed.cpp" />
+    <ClCompile Include="libs\imgui\imgui.cpp" />
+    <ClCompile Include="libs\imgui\imgui_draw.cpp" />
+    <ClCompile Include="libs\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="libs\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="libs\imgui\imgui_tables.cpp" />
+    <ClCompile Include="libs\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="libs\minhook\src\buffer.cpp" />
+    <ClCompile Include="libs\minhook\src\hde\hde32.cpp" />
+    <ClCompile Include="libs\minhook\src\hde\hde64.cpp" />
+    <ClCompile Include="libs\minhook\src\hook.cpp" />
+    <ClCompile Include="libs\minhook\src\trampoline.cpp" />
+    <ClCompile Include="cheat\visuals\playeresp.cpp" />
+    <ClCompile Include="cheat\advantage\movement.cpp" />
+    <ClCompile Include="cheat\advantage\playerhealth.cpp" />
+    <ClCompile Include="system\alghoritms\quat.cpp" />
+    <ClCompile Include="system\alghoritms\vec2d.cpp" />
+    <ClCompile Include="system\alghoritms\vec3d.cpp" />
+    <ClCompile Include="system\alghoritms\vec3i.cpp" />
+    <ClCompile Include="system\alghoritms\viewmatrix.cpp" />
+    <ClCompile Include="system\filesystem.cpp" />
+    <ClCompile Include="system\manipulators\byte_reader.cpp" />
+    <ClCompile Include="system\manipulators\byte_writer.cpp" />
+    <ClCompile Include="system\pch\pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="system\textfmt.cpp" />
+    <ClCompile Include="cheat\combat\target_system.cpp" />
+    <ClCompile Include="cheat\visuals\tracers.cpp" />
+    <ClCompile Include="ui\uimenu.cpp" />
+    <ClCompile Include="ui\uirender.cpp" />
+    <ClCompile Include="ui\uiprocessor.cpp" />
+    <ClCompile Include="ui\kiero\kiero.cpp" />
+    <ClCompile Include="cheat\visuals\visuals.cpp" />
+    <ClCompile Include="cheat\updatecycle.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
