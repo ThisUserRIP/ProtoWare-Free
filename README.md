@@ -55,4 +55,4 @@
 * **Use at your own risk.**
 * The author (**ThisUserRIP**) is not responsible for any bans, account losses, hardware issues, anti-cheat detections, legal consequences, or ToS violations.
 * Your account will most likely be **permanently banned** if detected.
-* For **educational and research purposes only**. Use exclusively in isolated virtual machines or authorized security testing environments.
+* For **educational and research purposes only**.
