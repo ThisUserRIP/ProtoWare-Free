@@ -1,3 +1,4 @@
+# ⚠️ WARNING: This project is no longer supported
 # 🛡️ ProtoWare-Free [ANTICHEATER Edition]
 
 **ProtoWare-Free** is a free open-source **internal rage cheat** for **Blockade** (Unity IL2CPP + EAC). Features include aimbot, ESP, visuals, movement hacks, and a clean ImGui-based menu.
